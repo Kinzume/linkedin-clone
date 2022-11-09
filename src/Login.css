@@ -1,0 +1,88 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  width: min(90vw, 25em);
+  height: 100vh;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.login > img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+  height: 15em;
+  justify-content: space-evenly;
+}
+
+.login > form > input {
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  font-size: 1rem;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.login > form > button {
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #2867b2;
+  border-radius: 5px;
+}
+
+.login__register {
+  color: #0177b7;
+  cursor: pointer;
+}
+
+.login > p {
+  align-self: center;
+}
+.login > ul {
+  align-self: center;
+}
+
+@media (min-width: 760px) {
+  .login {
+    width: min(90vw, 50em);
+  }
+  .login > form {
+    height: calc(20em + 20vh);
+  }
+  .login > form > input {
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    padding: 0.4em;
+  }
+  .login > form > button {
+    font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+    padding: 0.5em;
+  }
+  .login > p {
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
+  }
+}
+
+@media (min-width: 1000px) {
+  .login {
+    height: min(100vh, 90em);
+    width: min(45vw, 40em);
+  }
+  .login > form > input {
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
+  }
+  .login > form > button {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  }
+  .login > p {
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+  }
+}
